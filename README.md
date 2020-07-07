@@ -33,7 +33,7 @@ allprojects {
 ## 注意：
 ```
  /**
-   * 编译的时候会报错：java.util.zip.ZipException: zip file is empty
+   * 编译的时候如果报错：java.util.zip.ZipException: zip file is empty
    * 配置排除第三方包名冲突,根据自己需求添加，
    * 在app的build.gradle中需添加：
    */
