@@ -35,7 +35,7 @@ allprojects {
  /**
    * 编译的时候会报错：java.util.zip.ZipException: zip file is empty
    * 配置排除第三方包名冲突,根据自己需求添加，
-   * 在module目录下的build.gradle中需添加：
+   * 在app的build.gradle中需添加：
    */
     aspectjx{
         exclude 'androidx','com.google','com.squareup','com.alipay','org.apache'
