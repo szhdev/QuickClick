@@ -1,0 +1,22 @@
+package com.szhdev.library.aop;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ *    author : szhdev
+ *    time   : 2020/6/30
+ *    desc   : 防重复点击注解
+ */
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface SingleClick {
+
+    /**
+     * 快速点击的间隔
+     */
+    long value() default 500;
+}
