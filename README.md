@@ -30,6 +30,16 @@ allprojects {
      implementation 'com.github.szhdev:QuickClick:v1.0'
  }
 ```
+## 注意：
+```
+ /**
+   * 配置排除第三方包名冲突,这一步不配置，编译的时候会报错：java.util.zip.ZipException: zip file is empty
+   * 在module目录下的build.gradle中需添加：
+   */
+    aspectjx{
+        exclude 'androidx','com.google','com.squareup','com.alipay','org.apache'
+    }
+ ```
 #### 支持系统的onclick回调
 #### 支持接口的onclick回调
 #### 支持在xml中的点击事件
