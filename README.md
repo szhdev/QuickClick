@@ -15,9 +15,9 @@ dependencies {
 
 allprojects {
 	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-		}
+	    ...
+	    maven { url 'https://jitpack.io' }
+	   }
 	}
 ```
 ## 2.在app的build.gradle里配置
